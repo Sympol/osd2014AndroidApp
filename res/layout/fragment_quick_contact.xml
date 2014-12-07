@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="170.0dip" android:src="@drawable/osd_logo" android:scaleType="centerCrop" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:background="#77000000" android:paddingLeft="8.0dip" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nos Contacts" android:layout_alignBottom="@id/image" />
+    <com.astuetz.PagerSlidingTabStrip android:id="@id/tabs" android:background="@drawable/background_tabs_diagonal" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_below="@id/image" app:pstsIndicatorColor="#ff33b5e6" app:pstsUnderlineColor="#ff33b5e6" app:pstsDividerColor="#00000000" app:pstsTabPaddingLeftRight="14.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_below="@id/tabs" />
+</RelativeLayout>
